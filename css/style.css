@@ -1,0 +1,206 @@
+:root{
+  --color-general: #666;
+  --color-titulos: #000;
+  --color-footer-bg: #22202e;
+  --color-footer-text: #CCC;
+  --font-titulo: 'Kaushan Script', cursive;
+  --font-contenido: 'Lora', serif;
+}
+body{
+	font-size: 14px;
+	margin: 0;
+    font-family: var;
+    color: var;
+    background: #fff;
+}
+h1, h2, h3, h4 {
+  color: var;
+  font-family: var;
+}
+
+.hero-slides {
+  position: relative;
+  text-align: center;
+  padding: 40px 0 0 0;
+}
+.hero-slides img {
+  width: 420px;
+  max-width: 100%;
+}
+.hero-slides .badge {
+  position: absolute;
+  left: 10%;
+  top: 30px;
+  background: gold;
+  color: #fff;
+  border-radius: 50%;
+  padding: 20px 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.hero-slides .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+.hero-slides .arrow.left { left: 0; }
+.hero-slides .arrow.right { right: 0; }
+.hero-slides button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: 1px solid var;
+  background: transparent;
+  border-radius: 20px;
+  color: var;
+  font-family: var;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.hero-slides button:hover {
+  background: var;
+  color: #fff;
+}
+
+.delicieux {
+  text-align: center;
+  padding: 40px 0;
+}
+.delicieux h2 {
+  font-family: var;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+.delicieux .columns {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+.delicieux .column {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 320px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.delicieux .column img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+.delicieux .column h3 {
+  font-size: 1.1em;
+  margin: 10px 0 5px 0;
+  font-family: var;
+  color: var;
+}
+.delicieux .column p {
+  font-size: 0.98em;
+  color: var;
+}
+
+@media (max-width: 991px) {
+  .delicieux .columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0;
+}
+.intro .illustration {
+  flex: 1;
+  min-width: 200px;
+  max-width: 350px;
+}
+.intro .quote {
+  flex: 2;
+  font-style: italic;
+  font-size: 1.1em;
+  color: var;
+}
+.intro .author {
+  margin-top: 15px;
+  font-family: var;
+  color: var;
+}
+
+@media (max-width: 991px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  .intro .illustration, .intro .quote {
+    max-width: 100%;
+  }
+}
+
+
+header{
+	background-color: #fff;
+	padding: 5px 0;
+	box-shadow: 0px 0px 5px 10px #f2f2f2;
+}
+footer #copyright{
+	background-color: #000;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+}
+
+footer {
+  background-color: #22202e;
+  color: var;
+  padding: 40px 0 20px 0;
+  text-decoration-color: #000
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-col {
+  flex: 1;
+  min-width: 180px;
+}
+.footer-logo {
+  font-family: var;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+.footer-contact, .footer-hours {
+  font-size: 1em;
+  line-height: 1.6;
+}
+.footer-social {
+  margin-top: 15px;
+}
+.footer-social img {
+  width: 28px;
+  margin: 0 5px;
+}
+.footer-payments img {
+  width: 50px;
+  margin: 0 5px;
+}
+
+@media (max-width: 991px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
